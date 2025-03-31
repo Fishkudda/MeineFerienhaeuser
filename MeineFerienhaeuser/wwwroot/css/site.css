@@ -1,0 +1,205 @@
+/* Die ganze Seite betreffende Einstellungen */
+
+
+/* Grundlegende Schriftgröße für den gesamten HTML-Tag */
+html {
+    font-size: 12px;
+}
+
+/* Erhöht die Schriftgröße bei einer Mindestbreite von 768px */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+/* Fokus- und Aktivierungszustände für Schaltflächen und Formularelemente */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Stellt sicher, dass der HTML-Tag die gesamte Bildschirmhöhe einnimmt */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Verhindert, dass der Körperinhalt an den unteren Rand gedrückt wird */
+body {
+    margin-bottom: 60px;
+    overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+/* Setzt den Text in allen Elementen mit der Klasse 'left-aligned' nach links ausgerichtet */
+.left-aligned {
+    margin: 1%;
+    padding: 1%;
+    text-align: left;
+}
+
+
+/* Ende */
+
+/* Einstellungen für die Informationen */
+/* Beschränkt die Anzahl der Textzeilen in der Beschreibung und fügt "..." hinzu, wenn der Text abgeschnitten wird */
+.card-text-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Begrenzen auf 4 Zeilen */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Ende */
+
+/* Einstellungen für die Cards */
+
+/* Stellt sicher, dass die Hausnummernbeschreibung ordnungsgemäß angezeigt wird */
+.card-text-haus-nummer {
+    width: 100%;
+}
+
+
+
+/* Stellt sicher, dass die Symbole mit etwas Abstand nach links ausgerichtet sind */
+.left-aligned-icon {
+    margin-left: 5%;
+    text-align: left;
+}
+
+/* Sorgt für einen kleinen Abstand um die Karten */
+.card-margin {
+    margin: 1%;
+}
+
+/* Legt eine maximale Höhe für das Logo fest */
+.logo {
+    max-height: 30px;
+}
+
+/* Fügt einen Abstand um den Link-Button hinzu */
+.link-button {
+    margin: 2%;
+}
+
+/* Zentriert den Inhalt innerhalb der Container */
+.container {
+    align-content: center;
+}
+
+
+
+/* Ende */
+
+/* Einstellungen für das Paginieren*/
+/* Stelle den Text auf Bold in der Pagination */
+.card-box-paginato {
+    font-weight: bold;
+}
+
+.page-link {
+}
+/* Stellt sicher, dass die Paginierung linksbündig ist */
+pagination-controls {
+    text-align: left;
+}
+
+/* Erzeugt eine benutzerdefinierte Paginierung */
+.custom-pagination {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /* Stellt sicher, dass alle Seitenzahlen gleich groß sind */
+    .custom-pagination .page-item .page-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    /* Verhindert, dass die Seitenzahlen überlappen und bricht die Reihenfolge nach Bedarf */
+    .custom-pagination .page-item {
+        list-style: none;
+    }
+
+/* Definiert das Aussehen des Page Counters */
+.page-counter {
+    width: 150px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #258cfb !important;
+}
+
+.controls-pagination.page-link {
+    max-height: 40px;
+}
+
+.nav-container {
+    width: 100%;
+}
+/* Ende */
+/* Einstellungen für die Darstellungen der Häuser Cards*/
+/* Container für die Boxen untereinander */
+.card-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Abstand zwischen den Boxen */
+}
+
+/* Scrollbar für die zweite Box (card-box-iterator) */
+.card-box-iterator {
+    height: 50vh;
+    overflow-y: auto;
+    display: flex;
+}
+
+    /* Optionales Styling für Scrollbar */
+    .card-box-iterator::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .card-box-iterator::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+
+        .card-box-iterator::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+.page-size-form {
+    align-content: start;
+}
+
+.reload-site-li {
+    margin-left: 3%;
+}
+
+.form-select-house-per-side {
+    width: 400px !important; /* Passe die Breite an (Beispielwert) */
+}
+
+@media (max-width: 768px) {
+    .form-select-house-per-side {
+        width: 200px !important; /* Breite für kleinere Bildschirme */
+    }
+}
+
+.card-box-div {
+    border-bottom: 1px solid lightgray; /* Dünne graue Linie am unteren Rand */
+    padding: 10px 0; /* Optional: Abstand innen */
+}
+
+
+
+/* Ende */

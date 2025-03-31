@@ -1,0 +1,36 @@
+﻿@page
+@model MeineFerienhaeuser.Pages.HausModel
+
+<div class="mb-4">
+    <button class="btn btn-primary mb-2 d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+        <span>Informationen</span>
+        <span class="ms-2"><i class="bi bi-chevron-down"></i></span>
+    </button>
+    <div class="collapse" id="collapseInfo">
+        <div class="card card-body card-body-sorted">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class ="left-aligned">Das gesamte Layout basiert auf dem Standardtemplate mit Bootstrap 5 und Bootstrap Icons. Der Button soll das Haus in einem neuen Tab öffnen.</p>
+                    <ol class="left-aligned">
+                        <li>Basisprojekt aufsetzen</li>
+                        <li>Seiten anlegen und Layout anpassen</li>
+                        <li>Hausdaten laden</li>
+                        <li>Hausliste mit Cards darstellen</li>
+                        <li>Paging einbauen</li>
+                        <li>Variable PageSize hinzufügen</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <p class="left-aligned">Diese Seite soll eine kurze Übersicht über unsere Häuser zeigen. Infos zu den Dateien:</p>
+                    <ul class="left-aligned">
+                        <li>Daten: <a href="https://img.dansk.de/challenge/houses.json" target="_blank">houses.json</a></li>
+                        <li>Logo: <a href="https://img.dansk.de/assets/dansk/portal-logo.svg" target="_blank">portal-logo.svg</a></li>
+                        <li>Hausbilder: <a href="https://hpix.dansk.de/[House.ImageUrl]?width=600" target="_blank">Hausbilder</a></li>
+                        <li>Link: <a href="https://www.dansk.de[HouseUrl]" target="_blank">Haus-Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
